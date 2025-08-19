@@ -55,7 +55,7 @@ export const BrandText = styled(Typography)(({ theme }) => ({
 }));
 
 export const Title = styled(Typography)(({ theme }) => ({
-  ...theme.typography.body2,
+  ...theme.typography.h6,
   fontWeight: "bold",
   color: theme.palette.text.primary,
   textAlign: "center",
