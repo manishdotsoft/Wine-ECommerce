@@ -1,7 +1,11 @@
 import { useMemo } from "react";
-import { type FormValues } from "./types";
 import { agePopupSchema } from "../../validationSchemas/agePopupSchema";
 import { AGE_POPUP_INITIAL_VALUES } from "../../constant/formInitialValues";
+
+export interface FormValues {
+  dateOfBirth: string;
+  confirmAge: boolean;
+}
 
 export const useAgePopup = (onVerify: () => void) => {
   const initialValues: FormValues = AGE_POPUP_INITIAL_VALUES;

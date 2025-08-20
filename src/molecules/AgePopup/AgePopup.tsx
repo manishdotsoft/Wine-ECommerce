@@ -5,10 +5,15 @@ import { Formik, Form, Field } from "formik";
 import { useAgePopup } from "./AgePopup.hook.tsx";
 import * as Styled from "./AgePopup.style.tsx";
 import { formatDate } from "../../utils/dateFormate.ts";
-import logo from "../../assets/HQ Wine Outlet TRANSPRENT LOGO.png";
-import { type AgePopupProps } from "./types.ts";
+import { logo } from "../../assets/index.tsx";
 
-export const AgePopup: React.FC<AgePopupProps> = ({ open, onClose, onVerify }) => {
+export interface AgePopupProps {
+  open: boolean;
+  onClose: () => void;
+  onVerify: () => void;
+}
+
+const AgePopup = ({ open, onClose, onVerify }: AgePopupProps) => {
   const { validationSchema, initialValues, handleSubmit } = useAgePopup(onVerify);
 
   return (
@@ -99,3 +104,5 @@ export const AgePopup: React.FC<AgePopupProps> = ({ open, onClose, onVerify }) =
     </Styled.StyledDialog>
   );
 };
+
+export default AgePopup;

@@ -1,5 +1,7 @@
-// src/constants/formInitialValues.ts
-import { type FormValues } from "../molecules/AgePopup/types";
+export interface FormValues {
+  dateOfBirth: string;
+  confirmAge: boolean;
+}
 
 export const AGE_POPUP_INITIAL_VALUES: FormValues = {
   dateOfBirth: "",
