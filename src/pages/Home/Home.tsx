@@ -1,9 +1,19 @@
 import React from "react";
+import { AgePopup, Navigation, HeroBanner } from "../../molecules";
+import { useHomeLogic } from "./Home.hook";
+import { CustomizePlaceholderBox } from "./Home.style";
 
 const Home = () => {
+  const { agePopupOpen, isAgeVerified, handleVerifyAge } = useHomeLogic();
   return (
     <>
-      <h6>Wine ECommerce</h6>
+      <AgePopup open={agePopupOpen} onClose={() => {}} onVerify={handleVerifyAge} />
+      {isAgeVerified && <Navigation />}
+      {isAgeVerified && <HeroBanner />}
+      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
+      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
+      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
+      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
     </>
   );
 };

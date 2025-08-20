@@ -1,0 +1,10 @@
+export { default as logo } from "./logo/logo.png";
+export { default as bag } from "./icons/bag.svg";
+export { default as bike } from "./icons/bike.svg";
+export { default as map } from "./icons/map.svg";
+export { default as cart } from "./icons/shopping-cart.svg";
+export { default as userprofile } from "./icons/userprofile.svg";
+export { default as banner_img1 } from "./banner/herobanner.png";
+export { default as banner_img2 } from "./banner/premium-wine-cellar.png";
+export { default as banner_img3 } from "./banner/wine-delivery-modern-lifestyle.png";
+export { default as star } from "./icons/star.svg";
