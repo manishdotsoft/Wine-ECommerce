@@ -1,12 +1,11 @@
-import { styled } from "@mui/material/styles";
-import { Button, Box, Typography } from "@mui/material";
+import { Button, Box, Typography, styled } from "@mui/material";
 
 export const StyledButton = styled(Button)<{ bgColor: string }>(({ bgColor, theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
   backgroundColor: bgColor,
-  color: "white",
+  color: theme.palette.white.main,
   borderRadius: "12px",
   padding: "16px 12px 16px 20px",
   textTransform: "none",

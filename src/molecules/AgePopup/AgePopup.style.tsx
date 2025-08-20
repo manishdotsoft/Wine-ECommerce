@@ -174,5 +174,5 @@ export const ErrorText = styled(FormHelperText)(({ theme }) => ({
   fontSize: theme.typography.caption.fontSize,
   marginTop: theme.spacing(0.5),
   marginLeft: 0,
-  color: `${theme?.palette?.error?.alert}!important`,
+  color: `${theme?.palette?.error?.main}!important`,
 }));

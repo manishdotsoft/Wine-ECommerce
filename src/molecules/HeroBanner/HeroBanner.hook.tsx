@@ -1,7 +1,4 @@
-"use client";
-
 import type React from "react";
-
 import { useState, useEffect, useRef, useCallback } from "react";
 
 interface TouchState {
@@ -49,7 +46,6 @@ export const useHeroBanner = (totalSlides: number, autoPlayInterval = 5000) => {
       if (slideIndex >= 0 && slideIndex < totalSlides) {
         setCurrentSlide(slideIndex);
         stopAutoPlay();
-        // Restart auto-play after user interaction
         setTimeout(() => {
           if (isAutoPlaying) {
             startAutoPlay();

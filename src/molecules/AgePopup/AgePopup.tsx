@@ -1,6 +1,4 @@
-"use client";
-
-import type React from "react";
+import React from "react";
 import { Formik, Form, Field } from "formik";
 import { useAgePopup } from "./AgePopup.hook.tsx";
 import * as Styled from "./AgePopup.style.tsx";

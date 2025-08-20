@@ -1,7 +1,5 @@
-"use client";
-
 import type React from "react";
-import { Typography, Button, Box, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material";
 import {
   OverlayContainer,
   OverlayContentBox,
@@ -67,7 +65,7 @@ const HeroOverlay: React.FC<HeroOverlayProps> = ({
             onClick={onSecondBtnClick}
             bgColor={theme?.palette?.primary?.light}
             color={theme?.palette?.primary?.dark}
-            border={theme?.palette?.grey?.light}
+            border={theme?.palette?.grey[50]}
           />
         </OverlayButtonGroup>
       </OverlayContentBox>
