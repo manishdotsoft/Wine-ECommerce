@@ -4,8 +4,7 @@ export const PRIMARY_DARK = "#AD1113";
 export const PRIMARY_LIGHT = "#FFF3F3";
 
 export const SECONDARY_COLOR_100 = "#f4f7f4";
-export const LIGHT_GREY = "#D9D9D9";
-export const GREY_50 = "#F2F2F2";
+export const GREY_50 = "#D9D9D9";
 export const GREY_150 = "#F5F5F5";
 export const GREY_200 = "#f0f0f0";
 export const GREY_400 = "rgba(115, 115, 114, 0.9)";
@@ -22,7 +21,7 @@ export const WHITE = "#ffffff";
 export const BLACK_800 = "rgba(0, 0, 0, 0.87)";
 
 export const SECONDARY_ICON = "#0B9A64";
-export const ACCENT_ERROR = "rgba(255, 220, 218, 1)";
+export const ACCENT_ERROR = "#f44336";
 export const ACCENT_ERROR_100 = "rgba(255, 220, 218, 0.6)";
 export const ICON_COLOR = "#979797";
 export const COMMON_DEFAULT = "#ffffff";
@@ -68,7 +67,6 @@ const palette = {
   grey: {
     main: GRAY_COLOR,
     tertiary: GREY_TERTIARY,
-    light: LIGHT_GREY,
     50: GREY_50,
     150: GREY_150,
     100: ICON_LIGHT,

@@ -1,4 +1,4 @@
-import type React from "react";
+import React from "react";
 import { useHeroBanner } from "./HeroBanner.hook";
 import {
   HeroBannerContainer,

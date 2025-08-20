@@ -1,6 +1,6 @@
 import { styled, Box } from "@mui/material";
 
-export const HeroBannerContainer = styled(Box)(({ theme }) => ({
+export const HeroBannerContainer = styled(Box)(({}) => ({
   position: "relative",
   width: "99vw",
   height: "calc(100vh - 197px)",
