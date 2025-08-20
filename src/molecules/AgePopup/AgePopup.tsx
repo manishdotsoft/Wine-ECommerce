@@ -22,7 +22,7 @@ const AgePopup = ({ open, onClose, onVerify }: AgePopupProps) => {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {({ errors, touched, values, handleChange, handleBlur, setFieldValue }) => (
+          {({ errors, touched, values, setFieldValue }) => (
             <Form>
               <Styled.Container>
                 <Styled.LogoSection>
