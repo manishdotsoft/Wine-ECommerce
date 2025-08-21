@@ -8,3 +8,6 @@ export { default as banner_img1 } from "./banner/herobanner.png";
 export { default as banner_img2 } from "./banner/premium-wine-cellar.png";
 export { default as banner_img3 } from "./banner/wine-delivery-modern-lifestyle.png";
 export { default as star } from "./icons/star.svg";
+export { default as Offer_img1 } from "./offerImages/offer_img1.svg";
+export { default as Offer_img2 } from "./offerImages/offer_img2.svg";
+export { default as Offer_img3 } from "./offerImages/offer_img3.svg";

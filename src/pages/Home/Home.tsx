@@ -1,5 +1,5 @@
 import React from "react";
-import { AgePopup, Navigation, HeroBanner } from "../../molecules";
+import { AgePopup, Navigation, HeroBanner, TimeOfferCarousel, Trending } from "../../molecules";
 import { useHomeLogic } from "./Home.hook";
 import { CustomizePlaceholderBox } from "./Home.style";
 import { HERO_BANNER_SLIDES } from "../../constant/heroBannerSlides";
@@ -11,10 +11,8 @@ const Home = () => {
       <AgePopup open={agePopupOpen} onClose={() => {}} onVerify={handleVerifyAge} />
       {isAgeVerified && <Navigation />}
       {isAgeVerified && <HeroBanner slides={HERO_BANNER_SLIDES} />}
-      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
-      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
-      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
-      <CustomizePlaceholderBox>Placeholder</CustomizePlaceholderBox>
+      {isAgeVerified && <TimeOfferCarousel />}
+      {isAgeVerified && <Trending />}
     </>
   );
 };

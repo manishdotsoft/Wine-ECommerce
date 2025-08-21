@@ -21,6 +21,9 @@ declare module "@mui/material/styles" {
       main: string;
       secondary?: string;
     };
+    black: {
+      800: string;
+    };
   }
 
   interface PaletteOptions {
@@ -41,6 +44,9 @@ declare module "@mui/material/styles" {
     icon?: {
       main: string;
       secondary?: string;
+    };
+    black?: {
+      800?: string;
     };
   }
 }
