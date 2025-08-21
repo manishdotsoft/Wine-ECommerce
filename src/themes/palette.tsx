@@ -6,7 +6,7 @@ export const PRIMARY_LIGHT = "#FFF3F3";
 export const SECONDARY_COLOR_100 = "#f4f7f4";
 export const GREY_50 = "#D9D9D9";
 export const GREY_150 = "#F5F5F5";
-export const GREY_200 = "#f0f0f0";
+export const GREY_200 = "#4A515C";
 export const GREY_400 = "rgba(115, 115, 114, 0.9)";
 export const GREY_300 = "#CACACA";
 export const GREY_500 = "rgba(158, 158, 158, 1)";
@@ -18,7 +18,7 @@ export const WHITE_200 = "#FFFFFF4D";
 export const WHITE_300 = "rgba(255, 255, 255, 0.3)";
 export const WHITE_400 = "#FFF7E0";
 export const WHITE = "#ffffff";
-export const BLACK_800 = "rgba(0, 0, 0, 0.87)";
+export const BLACK_800 = "#1A1F29";
 
 export const SECONDARY_ICON = "#0B9A64";
 export const ACCENT_ERROR = "#f44336";
