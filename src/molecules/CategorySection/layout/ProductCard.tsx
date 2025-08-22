@@ -10,7 +10,7 @@ import {
   Title,
   SubTitle,
 } from "./ProductCard.style";
-import { PRODUCT_DATA } from "../../../constant/CategoryData";
+import { PRODUCT_DATA } from "../../../constant/categoryData";
 
 const ProductCardSection = () => {
   const displayData = PRODUCT_DATA.slice(0, 4);
