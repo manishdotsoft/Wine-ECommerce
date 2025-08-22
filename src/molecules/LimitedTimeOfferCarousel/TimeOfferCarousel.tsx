@@ -12,7 +12,8 @@ import {
   DotsContainer,
   Dot,
 } from "./TimeOfferCarousel.style";
-import { offers } from "../../constant/offerData";
+import { OFFERS } from "../../constant/offerData";
+import { CustomTitleSection } from "../../atoms";
 
 interface OfferData {
   id: number;
@@ -25,7 +26,7 @@ interface OfferData {
 const LimitedTimeOffersCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const totalSlides = Math.max(0, offers.length - 2);
+  const totalSlides = Math.max(0, OFFERS.length - 2);
 
   const handleDotClick = (index: number) => {
     setCurrentIndex(index);
@@ -52,14 +53,13 @@ const LimitedTimeOffersCarousel = () => {
 
   return (
     <CarouselContainer>
-      <HeaderSection>
-        <Title>Limited-Time Offers</Title>
-        <Subtitle>Uncork exclusive savings this week.</Subtitle>
-      </HeaderSection>
-
+      <CustomTitleSection
+        title={"Limited-Time Offers"}
+        subtitle={"Uncork exclusive savings this week."}
+      />
       <CarouselWrapper>
         <CarouselTrack currentIndex={currentIndex}>
-          {offers.map((offer) => (
+          {OFFERS.map((offer) => (
             <CarouselSlide key={offer.id}>{renderOfferCard(offer)}</CarouselSlide>
           ))}
         </CarouselTrack>

@@ -1,4 +1,4 @@
-export const cardData = [
+export const CARD_DATA = [
   {
     title: "Trending Now",
     subTitle:

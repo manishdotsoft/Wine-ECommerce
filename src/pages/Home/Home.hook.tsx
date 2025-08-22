@@ -8,9 +8,13 @@ export const useHomeLogic = () => {
     setAgePopupOpen(false);
     setIsAgeVerified(true);
   };
+  const handleCategoryClick = () => {
+    console.log("category clicked");
+  };
   return {
     agePopupOpen,
     isAgeVerified,
     handleVerifyAge,
+    handleCategoryClick,
   };
 };

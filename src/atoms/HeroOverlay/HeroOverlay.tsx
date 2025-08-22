@@ -24,7 +24,7 @@ export interface HeroOverlayProps {
   tagActionText: string;
 }
 
-const HeroOverlay: React.FC<HeroOverlayProps> = ({
+const HeroOverlay = ({
   title,
   subtitle,
   firstBtnText,
@@ -33,7 +33,7 @@ const HeroOverlay: React.FC<HeroOverlayProps> = ({
   onSecondBtnClick,
   tagText,
   tagActionText,
-}) => {
+}: HeroOverlayProps) => {
   const theme = useTheme();
   return (
     <OverlayContainer>

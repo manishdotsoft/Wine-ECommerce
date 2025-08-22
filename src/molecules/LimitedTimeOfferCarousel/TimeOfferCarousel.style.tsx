@@ -1,5 +1,4 @@
-import { Box, Typography, IconButton } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Typography, IconButton, styled } from "@mui/material";
 
 export const CarouselContainer = styled(Box)(({}) => ({
   width: "100%",

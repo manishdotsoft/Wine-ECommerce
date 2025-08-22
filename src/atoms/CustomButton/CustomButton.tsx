@@ -8,17 +8,19 @@ interface CustomButtonProps {
   onClick: () => void;
   color: string;
   border?: string;
+  btnBorderColor?: string;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({
+const CustomButton = ({
   text,
   bgColor,
   onClick,
   color = "",
   border = "",
-}) => {
+  btnBorderColor = "",
+}: CustomButtonProps) => {
   return (
-    <StyledButton onClick={onClick} bgColor={bgColor}>
+    <StyledButton onClick={onClick} bgColor={bgColor} btnBorderColor={btnBorderColor}>
       <ButtonText style={{ color }}>{text}</ButtonText>
       <IconWrapper border={border}>
         <NorthEastIcon fontSize="small" />
