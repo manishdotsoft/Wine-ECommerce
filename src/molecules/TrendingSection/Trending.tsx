@@ -11,7 +11,7 @@ import {
   Description,
   CTAButton,
 } from "./Trending.style";
-import { cardData } from "../../constant/trendingData";
+import { CARD_DATA } from "../../constant/trendingData";
 import CustomCard from "../../atoms/CustomCard/CustomCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
@@ -36,7 +36,7 @@ const Trending = () => {
           </ContentContainer>
         </LeftSectionBox>
         <RightSectionBox>
-          {cardData.map((card, index) => (
+          {CARD_DATA.map((card, index) => (
             <CustomCard
               key={index}
               title={card.title}

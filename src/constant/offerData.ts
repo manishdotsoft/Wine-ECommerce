@@ -7,7 +7,7 @@ interface OfferData {
 }
 import { Offer_img1, Offer_img2, Offer_img3 } from "../assets";
 
-export const offers: OfferData[] = [
+export const OFFERS: OfferData[] = [
   {
     id: 1,
     image: Offer_img1,

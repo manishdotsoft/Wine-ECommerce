@@ -8,7 +8,7 @@ import {
   Dot,
 } from "./HeroBanner.style";
 import { HERO_BANNER_SLIDES } from "../../constant/heroBannerSlides";
-import HeroOverlay from "../../atoms/HeroOverlay/HeroOverlay";
+import { HeroOverlay } from "../../atoms";
 
 export interface SlideData {
   id: number;
