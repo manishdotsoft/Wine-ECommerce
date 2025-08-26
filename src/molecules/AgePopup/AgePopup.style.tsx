@@ -1,4 +1,3 @@
-import { styled } from "@mui/material/styles";
 import {
   Box,
   Typography,
@@ -9,6 +8,7 @@ import {
   TextField,
   FormControlLabel,
   FormHelperText,
+  styled
 } from "@mui/material";
 
 export const LogoImage = styled("img")({

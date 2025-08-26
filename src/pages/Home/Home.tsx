@@ -7,12 +7,17 @@ import {
   Trending,
   CategorySection,
   DealSection,
+  CuratedPicks,
+  EverydayCarousel,
+  Brand,
+  RecentlyView,
 } from "../../molecules";
 import { useHomeLogic } from "./Home.hook";
 import { HERO_BANNER_SLIDES } from "../../constant/heroBannerSlides";
 
 const Home = () => {
-  const { agePopupOpen, isAgeVerified, handleVerifyAge, handleCategoryClick } = useHomeLogic();
+  const { agePopupOpen, isAgeVerified, handleVerifyAge, handleCategoryClick, handleBrandClick } =
+    useHomeLogic();
   return (
     <>
       <AgePopup open={agePopupOpen} onClose={() => {}} onVerify={handleVerifyAge} />
@@ -20,8 +25,12 @@ const Home = () => {
       {isAgeVerified && <HeroBanner slides={HERO_BANNER_SLIDES} />}
       {isAgeVerified && <TimeOfferCarousel />}
       {isAgeVerified && <Trending />}
+      {isAgeVerified && <CuratedPicks />}
+      {isAgeVerified && <EverydayCarousel />}
       {isAgeVerified && <CategorySection handleClick={handleCategoryClick} />}
       {isAgeVerified && <DealSection />}
+      {isAgeVerified && <Brand handleBrandClick={handleBrandClick} />}
+      {isAgeVerified && <RecentlyView />}
     </>
   );
 };

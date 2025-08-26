@@ -11,10 +11,14 @@ export const useHomeLogic = () => {
   const handleCategoryClick = () => {
     console.log("category clicked");
   };
+  const handleBrandClick = () => {
+    console.log("view all brand");
+  };
   return {
     agePopupOpen,
     isAgeVerified,
     handleVerifyAge,
     handleCategoryClick,
+    handleBrandClick,
   };
 };
