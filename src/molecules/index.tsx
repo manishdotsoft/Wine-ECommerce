@@ -5,3 +5,7 @@ export { default as TimeOfferCarousel } from "./LimitedTimeOfferCarousel/TimeOff
 export { default as Trending } from "./TrendingSection/Trending";
 export { default as CategorySection } from "./CategorySection/CategorySection";
 export { default as DealSection } from "./TodayDeal/DealSection";
+export { default as CuratedPicks } from "./CuratedPicks/CuratedPicks";
+export { default as EverydayCarousel } from "./EverydayCarousel/EverydayCarousel";
+export { default as Brand } from "./Brands/Brands";
+export { default as RecentlyView } from "./RecentlyViewed/RecentlyView";

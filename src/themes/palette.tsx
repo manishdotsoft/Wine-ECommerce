@@ -114,7 +114,7 @@ const palette = {
     disabled: TEXT_DISABLED,
   },
   background: {
-    default: SECONDARY_COLOR,
+    default: WHITE,
     bg_dark: BG_DARK,
   },
 };
