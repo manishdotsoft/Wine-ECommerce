@@ -29,3 +29,7 @@ export { default as willow } from "./icons/willow.png";
 export { default as expandIcon } from "./icons/expand_icon.svg";
 export { default as cityMap } from "./icons/city_map.svg";
 export { default as calendar } from "./icons/calendar.svg";
+export { default as instagram } from "./icons/instagram.svg";
+export { default as facebook } from "./icons/facebook.svg";
+export { default as twitter } from "./icons/twitter.svg";
+export { default as linkedin } from "./icons/linkedIn.svg";

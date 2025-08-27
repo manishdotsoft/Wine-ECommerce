@@ -4,10 +4,10 @@ export const PRIMARY_DARK = "#AD1113";
 export const PRIMARY_LIGHT = "#FFF3F3";
 
 export const SECONDARY_COLOR_100 = "#f4f7f4";
-export const GREY_50 = "#D9D9D9";
+export const GREY_50 = "#2F2F2F";
 export const GREY_150 = "#F5F5F5";
 export const GREY_200 = "#4A515C";
-export const GREY_400 = "rgba(115, 115, 114, 0.9)";
+export const GREY_400 = "#414651";
 export const GREY_300 = "#CACACA";
 export const GREY_500 = "rgba(158, 158, 158, 1)";
 export const PRIMARY_500 = "#0B9A64";
