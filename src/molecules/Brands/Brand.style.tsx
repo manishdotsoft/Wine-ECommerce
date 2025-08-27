@@ -11,4 +11,5 @@ export const ImageWrapper = styled(Box)({
   justifyContent: "space-between",
   gap: "40px",
   marginTop: "40px",
+  flexWrap: "wrap",
 });

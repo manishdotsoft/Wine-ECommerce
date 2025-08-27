@@ -11,7 +11,9 @@ import {
   EverydayCarousel,
   Brand,
   RecentlyView,
+  Newsletter,
 } from "../../molecules";
+import Footer from "../../organisms/Footer/Footer";
 import { useHomeLogic } from "./Home.hook";
 import { HERO_BANNER_SLIDES } from "../../constant/heroBannerSlides";
 
@@ -31,6 +33,8 @@ const Home = () => {
       {isAgeVerified && <DealSection />}
       {isAgeVerified && <Brand handleBrandClick={handleBrandClick} />}
       {isAgeVerified && <RecentlyView />}
+      {isAgeVerified && <Newsletter />}
+      {isAgeVerified && <Footer />}
     </>
   );
 };
