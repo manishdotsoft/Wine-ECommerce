@@ -1,5 +1,6 @@
 import { styled } from "@mui/material/styles";
-import { Box, Typography, Link, IconButton, Grid } from "@mui/material";
+import { Box, Typography, Link, Grid } from "@mui/material";
+import IconButton, { type IconButtonProps } from "@mui/material/IconButton";
 
 export const FooterContainer = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -27,14 +28,19 @@ export const SocialIconsContainer = styled(Box)(({ theme }) => ({
   gap: "22px",
 }));
 
-export const StyledIconButton = styled(IconButton)(({ theme }) => ({
-  border: `1px solid ${theme.palette.primary.dark}`,
-  background: theme.palette.primary.light,
-  borderRadius: "6px",
-  width: 36,
-  height: 36,
-  marginTop: "18px",
-}));
+export const StyledIconButton = styled((props: IconButtonProps) => <IconButton {...props} />)(
+  ({ theme }) => ({
+    border: `1px solid ${theme.palette.primary.dark}`,
+    background: theme.palette.primary.light,
+    borderRadius: "6px",
+    width: 36,
+    height: 36,
+    marginTop: "18px",
+    "&:hover": {
+      backgroundColor: "rgba(255, 255, 255, 0.1)",
+    },
+  })
+);
 
 export const SectionTitle = styled(Typography)(({ theme }) => ({
   fontWeight: "bold",

@@ -1,5 +1,6 @@
 import type React from "react";
-import { Grid, Box } from "@mui/material";
+import { Box } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import {
   FooterContainer,
   SocialIconsContainer,
@@ -32,7 +33,7 @@ const Footer: React.FC = () => {
     <FooterContainer>
       <InnerWrapper>
         {/* Logo and Social Media Section */}
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid>
           <Box sx={{ mb: 2 }}>
             <LogoImage src={logo} />
           </Box>
@@ -42,9 +43,9 @@ const Footer: React.FC = () => {
               <StyledIconButton
                 key={index}
                 component="a"
-                href={social.href}
+                // href={social.href}
                 aria-label={social.label}
-                target="_blank"
+                // target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src={social.icon} />
@@ -55,9 +56,7 @@ const Footer: React.FC = () => {
 
         <Box sx={{ display: "flex", width: "60%", justifyContent: "space-between" }}>
           {Object.values(FOOTER_DATA).map((section, index) => (
-            <CustomizedGrid key={index} item xs={12} sm={6} md={2}>
-              {renderFooterSection(section)}
-            </CustomizedGrid>
+            <CustomizedGrid key={index}>{renderFooterSection(section)}</CustomizedGrid>
           ))}
         </Box>
       </InnerWrapper>
