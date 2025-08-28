@@ -12,6 +12,7 @@ export const StyledButton = styled(Button)<{ bgColor: string; btnBorderColor: st
     padding: "16px 12px 16px 20px",
     textTransform: "none",
     fontWeight: 600,
+    minWidth: "150px",
     "&:hover": {
       backgroundColor: bgColor,
       opacity: 0.9,
