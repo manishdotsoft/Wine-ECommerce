@@ -29,7 +29,6 @@ export const CountrySelect = styled(Select)(({ theme }) => ({
     padding: "0 8px",
     fontSize: "14px",
     minWidth: "50px",
-    borderRight: `1px solid ${theme.palette.success.main}`,
     marginRight: "8px",
   },
   "& .MuiOutlinedInput-notchedOutline": {
